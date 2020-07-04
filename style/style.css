@@ -1,0 +1,292 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.information h1,
+.all_info h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.information .text_description,
+.information .info_text_description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  min-width: 1160px;
+}
+
+.information form,
+.all_info form {
+  text-align: center;
+}
+
+.information .text_description div,
+.all_info .text_description div {
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+  border-top: 3px solid #000000;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.information .text_description div:first-child,
+.all_info .text_description div:first-child,
+.information .info_text_description div:first-child,
+.all_info .info_text_description div:first-child {
+  border-left: 3px solid #000000;
+}
+
+.information .info_text_description div,
+.all_info .info_text_description div {
+  padding: 10px 0;
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
+  font-weight: 600;
+}
+
+.information form h2 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+.information .info_text_description div:last-child {
+  padding: 5px;
+  justify-content: center;
+}
+
+.information .info_text_description .typeDevice {
+  cursor: pointer;
+}
+
+.information .info_text_description .btn_toDo {
+  display: flex;
+}
+
+.information form .newComputerButton,
+.information form .createComputer,
+.information form .editComputer,
+.information form .mainMenu,
+.create_сomputer form .newComputerButton,
+.create_сomputer form .createComputer,
+.create_сomputer form .editComputer,
+.create_сomputer form .mainMenu {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.create_сomputer h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.create_сomputer form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.create_сomputer form div .device,
+.create_сomputer form div .year,
+.create_сomputer form div .processor,
+.create_сomputer form div .typeRam,
+.create_сomputer form div .typeRom,
+.create_сomputer form div .graphicsСard,
+.create_сomputer form div .inputPowerSupply {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create_сomputer form .os_btn .formRadioBtn {
+  flex-direction: row;
+}
+
+.create_сomputer form .os_btn .formRadioBtn .os_true {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.create_сomputer form .os_btn .formRadioBtn .os_false {
+  cursor: pointer;
+}
+
+.create_сomputer form div .form_label,
+.create_сomputer form div .osSpan,
+.create_сomputer form div .monitorSpan,
+.create_сomputer form div .keyboardSpan {
+  align-self: flex-start;
+  padding-bottom: 2px;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.create_сomputer form .form_computer .powerSupply,
+.create_сomputer form .form_computer .monitor_btn,
+.create_сomputer form .form_computer .keyboard_btn,
+.create_сomputer form .form_computer .brendSelect,
+.create_сomputer form .form_laptop .powerSupply,
+.create_сomputer form .form_laptop .monitor_btn,
+.create_сomputer form .form_laptop .keyboard_btn,
+.create_сomputer form .form_laptop .brendSelect {
+  width: 100%;
+}
+
+.create_сomputer form .form_computer .monitor_btn .formRadioBtnMonitor,
+.create_сomputer form .form_computer .monitor_btn .formRadioBtnKeyboard,
+.create_сomputer form .form_computer .keyboard_btn .formRadioBtnMonitor,
+.create_сomputer form .form_computer .keyboard_btn .formRadioBtnKeyboard {
+  flex-direction: row;
+}
+
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnMonitor
+  .monitor_true,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnMonitor
+  .monitor_false,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnMonitor
+  .keyboard_true,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnMonitor
+  .keyboard_false,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnKeyboard
+  .monitor_true,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnKeyboard
+  .monitor_false,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnKeyboard
+  .keyboard_true,
+.create_сomputer
+  form
+  .form_computer
+  .monitor_btn
+  .formRadioBtnKeyboard
+  .keyboard_false,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnMonitor
+  .monitor_true,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnMonitor
+  .monitor_false,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnMonitor
+  .keyboard_true,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnMonitor
+  .keyboard_false,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnKeyboard
+  .monitor_true,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnKeyboard
+  .monitor_false,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnKeyboard
+  .keyboard_true,
+.create_сomputer
+  form
+  .form_computer
+  .keyboard_btn
+  .formRadioBtnKeyboard
+  .keyboard_false {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.create_сomputer form .formButtons {
+  flex-direction: row;
+  padding-top: 10px;
+  width: 50%;
+}
+
+.create_сomputer form .formButtons .createComputer {
+  margin-right: 10px;
+}
+
+.create_сomputer form .formButtons .mainMenu {
+  margin-left: 10px;
+}
+
+.create_сomputer form .form_laptop .form-group {
+  margin: 0;
+  width: 100%;
+}
+
+.create_сomputer form .form_laptop .form-group .brendSelect,
+.create_сomputer form .form_laptop .form-group .screenMatrixSelect,
+.create_сomputer form .form_laptop .form-group .form_input {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.all_info .text_description,
+.all_info .info_text_description {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  min-width: 1160px;
+}
+
+.all_info form .mainMenu2 {
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

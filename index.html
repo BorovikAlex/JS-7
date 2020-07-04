@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD ES6</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="information" class="information">
+      <h1>Главная страница</h1>
+      <form></form>
+    </div>
+
+    <div id="all_info" class="all_info">
+      <h1>Подробная информация</h1>
+      <form></form>
+    </div>
+
+    <div id="create_сomputer" class="create_сomputer">
+      <h1>
+        Работа с устройствами
+      </h1>
+      <form>
+        <div class="form-group" id="fromGroupTypeDevice">
+          <label for="device" class="form_label">Выберите устройство:</label>
+          <select id="device" class="form-control device">
+            <option value="pc" selected>Компьютер</option>
+            <option value="laptop">Ноутбук</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="year" class="form_label">Год выпуска:</label>
+          <input type="month" id="year" class="form-control year" />
+        </div>
+        <div class="form-group">
+          <label for="processor" class="form_label"
+            >Наименование процессора:</label
+          >
+          <select id="processor" class="form-control processor">
+            <option value="intel">Intel</option>
+            <option value="amd">AMD</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="typeRam" class="form_label">Тип ОЗУ:</label>
+          <select id="typeRam" class="form-control typeRam">
+            <option value="SIMM" selected>SIMM</option>
+            <option value="DIMM">DIMM</option>
+            <option value="DDR">DDR</option>
+            <option value="DDR4">DDR4</option>
+            <option value="DDR3">DDR3</option>
+          </select>
+        </div>
+        <div id="os_btn" class="os_btn">
+          <span class="osSpan">Наличие OS:</span>
+          <div class="formRadioBtn">
+            <label for="os_true" class="os_true"
+              ><input
+                type="radio"
+                id="os_true"
+                name="os"
+                value="true"
+                checked
+              />Да</label
+            >
+            <label for="os_false" class="os_false"
+              ><input
+                type="radio"
+                id="os_false"
+                name="os"
+                value="false"
+              />Нет</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="typeRom" class="form_label">Тип ПЗУ:</label>
+          <select id="typeRom" class="form-control typeRom">
+            <option value="HDD" selected>HDD</option>
+            <option value="SSD">SSD</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="graphicsСard" class="form_label"
+            >Наименование видеокарты:</label
+          >
+          <select id="graphicsСard" class="form-control graphicsСard">
+            <option value="NVIDIA GeForse" selected>NVIDIA GeForse</option>
+            <option value="AMD Radeon">AMD Radeon</option>
+          </select>
+        </div>
+        <div id="form_computer" class="form_computer">
+          <div class="powerSupply">
+            <label for="powerSupply" class="form_label"
+              >Мощность блока питания:</label
+            >
+            <input
+              type="number"
+              id="powerSupply"
+              class="form-control inputPowerSupply"
+            />
+          </div>
+          <div id="monitor_btn" class="monitor_btn">
+            <span class="monitorSpan">Наличие монитора:</span>
+            <div class="formRadioBtnMonitor">
+              <label for="monitor_true" class="monitor_true"
+                ><input
+                  type="radio"
+                  id="monitor_true"
+                  name="monitor"
+                  value="true"
+                  checked
+                />Да</label
+              >
+              <label for="monitor_false" class="monitor_false"
+                ><input
+                  type="radio"
+                  id="monitor_false"
+                  name="monitor"
+                  value="false"
+                />Нет</label
+              >
+            </div>
+          </div>
+          <div id="keyboard_btn" class="keyboard_btn">
+            <span class="keyboardSpan">Наличие клавиатуры:</span>
+            <div class="formRadioBtnKeyboard">
+              <label for="keyboard_true" class="keyboard_true"
+                ><input
+                  type="radio"
+                  id="keyboard_true"
+                  name="keyboard"
+                  value="true"
+                  checked
+                />Да</label
+              >
+              <label for="keyboard_false" class="keyboard_false"
+                ><input
+                  type="radio"
+                  id="keyboard_false"
+                  name="keyboard"
+                  value="false"
+                />Нет</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div id="form_laptop" class="form_laptop" style="display: none;">
+          <div class="form-group">
+            <label for="brend" class="form_label">Бренд ноутбука:</label>
+            <select id="brend" class="form-control brendSelect">
+              <option value="ASUS" selected>ASUS</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="HP">HP</option>
+              <option value="Dell">Dell</option>
+              <option value="Acer">Acer</option>
+              <option value="Xiaomi">Xiaomi</option>
+              <option value="MSI">MSI</option>
+              <option value="Razer">Razer</option>
+              <option value="Apple">Apple</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="screenMatrix" class="form_label">Тип матрицы:</label>
+            <select id="screenMatrix" class="form-control screenMatrixSelect">
+              <option value="IPS" selected>IPS</option>
+              <option value="TN+Film">TN+Film</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="diagonal" class="form_label">Диагональ экрана:</label>
+            <input
+              type="number"
+              id="diagonal"
+              class="form-control form_input"
+            />
+          </div>
+        </div>
+        <div class="formButtons">
+          <input
+            type="button"
+            id="createComputer"
+            class="btn btn-success createComputer"
+            value="Добавить новое устройство"
+          />
+          <input
+            type="button"
+            id="editComputer"
+            class="btn btn-primary editComputer"
+            value="Изменить текущее устройство"
+            style="display: none;"
+          />
+          <input
+            type="button"
+            id="mainMenu"
+            class="btn btn-dark mainMenu"
+            value="Главная страница"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="./script/scriptClass.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
